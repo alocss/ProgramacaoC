@@ -56,8 +56,4 @@ int main(){
         printf("Opção Iválida");
         break;
     }
-
-
-
-
 }
