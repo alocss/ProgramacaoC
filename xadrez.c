@@ -5,11 +5,12 @@ int main() {
     int torre = 0;
     int bispo = 0;
     int rainha = 0;
+    int cavalo = 0;
 
     // Movimento da Torre
     printf("Movimentando a Torre (5 casas para a direita):\n");
     // Usando a estrutura de repetição 'for' para a Torre
-    for(torre = 0; torre < 5; torre++) { // A variável torre já foi declarada acima, então não precisa declarar novamente aqui.
+    for(torre = 0; torre < 5; torre++) {
         printf("Direita\n");
     }
     printf("\n");
@@ -31,6 +32,20 @@ int main() {
         rainha++;
     } while(rainha < 8);
     printf("\n");
+
+    // Movimentando o cavalo
+    printf("Movimentando o cavalo (Duas casas para baixo e uma casa para a esquerda):\n");
+
+    // Usando o 'for' para o movimento para baixo (2 casas)
+    for (cavalo = 0; cavalo < 2; cavalo++) {
+        printf("Baixo\n");
+    }
+
+    // Usando o 'while' para o movimento para a esquerda (1 casa)
+    while(cavalo < 3) {
+        printf("Esquerda\n");
+        cavalo++;
+    }
 
     return 0;
 }
